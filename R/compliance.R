@@ -1,4 +1,6 @@
-
+library(reticulate)
+use_condaenv("base", required = TRUE)  
+use_python("/opt/conda/bin/python")
 
 # # Start with clean environment -------------------------------------------------
 # # _Remove environment variables ------------------------------------------------
