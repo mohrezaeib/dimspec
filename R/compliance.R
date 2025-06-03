@@ -139,7 +139,7 @@ if (INFORMATICS) {
     if (!exists("PYENV_NAME")) PYENV_NAME <- "base"
     if (!exists("PYENV_LIBRARIES")) PYENV_LIBRARIES <- c("rdkit=2021.09.4", "r-reticulate=1.24")
     if (!exists("PYENV_REF")) PYENV_REF <- "rdk"
-    if (!exists("CONDA_PATH")) CONDA_PATH <- "rdk"
+    if (!exists("CONDA_PATH")) CONDA_PATH <- "/opt/conda/bin/conda"
     setup_rdkit(
       env_name           = PYENV_NAME,
       required_libraries = PYENV_LIBRARIES,
