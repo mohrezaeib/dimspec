@@ -1,3 +1,5 @@
+
+
 # # Start with clean environment -------------------------------------------------
 # # _Remove environment variables ------------------------------------------------
 # rm(list = ls())
@@ -132,7 +134,7 @@ if (INFORMATICS) {
     require(reticulate)
     source(here::here("inst", "rdkit", "env_py.R"))
     source(here::here("inst", "rdkit", "py_setup.R"))
-    if (!exists("PYENV_NAME")) PYENV_NAME <- "nist_hrms_db"
+    if (!exists("PYENV_NAME")) PYENV_NAME <- "base"
     if (!exists("PYENV_LIBRARIES")) PYENV_LIBRARIES <- c("rdkit=2021.09.4", "r-reticulate=1.24")
     if (!exists("PYENV_REF")) PYENV_REF <- "rdk"
     if (!exists("CONDA_PATH")) CONDA_PATH <- "rdk"
